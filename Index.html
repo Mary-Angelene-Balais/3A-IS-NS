@@ -36,11 +36,12 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-            <img src="Images/1x1.jpg">
-        </div>
+                <img src="Images/1x1.jpg">
+            </div>
             <div class="about-col-2">
-            <h1 class="subtitle"> About Me</h1>
-            <p> Hello, I'm Mary Angelene V. Balais, a 20-year-old with a passion for creativity and community involvement. 
+                <h1 class="subtitle"> About Me</h1>
+            <!--Brief Introduction and Description about Myself-->
+                <p> Hello, I'm Mary Angelene V. Balais, a 20-year-old with a passion for creativity and community involvement. 
                 When I'm not pursuing my studies as a 3rd-year college student at the Technological University of the Philippines 
                 - Manila Campus, I'm indulging in my hobbies and talents, which include sewing, lettering, crafting, scrapbooking, 
                 and singing. Beyond my personal interests, I'm an active server and choir member at Sta. Clara de Montefalco Church, 
@@ -49,12 +50,56 @@
                 (YSLEP) Scholar since 2021, I'm committed to giving back to society. Additionally, my basic HTML knowledge, gained 
                 during my 10th-grade ICT course, reflects my eagerness to embrace new skills and technologies. I look forward to 
                 connecting with people and sharing experiences that drive personal growth and community betterment. </p>
-        </div>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>User Interface (UI)</span><br>Designing and Developing UI for Software Programs</li>
+                        <li><span>Presentation</span><br>Communicating Ideas effectively </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul> 
+                        <li><span>2021  -  Current</span><br>Currently pursuing a bachelors degree in Information System @TUP-M (Programming Languages that we have learned are C, C++, Python)</li>
+                        <li><span>2018</span><br>Took ICT Subject and learned basic HTML website development </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul> 
+                        <li><span>2021  -  Present</span><br>Currently pursuing a Bachelor of Science in Information System - Non Stem @TUP-M </li>
+                        <li><span>2019 - 2021</span><br>Senior High School, Academic Track, Humanities and Social Sciences (HUMMS) Strand</li>
+                        <li><span>2017 - 2019</span><br>Junior High School (G9-G10), Special Program in the Arts Section, Creative Writing Program</li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>
 
+<script>
 
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
 
 </body>
 </html>
