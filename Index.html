@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Mary's Portfolio Website </title>
     <!--CSS Link-->
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -13,133 +13,129 @@ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
 </head>
 <body>
-
-<!--Top Navigation Menu Panel-->
-<div id="header">
-    <div class="container">
-        <nav> 
-            <img src="Images/logo-m.png" class="logo">
-            <ul>
-                <li><a href="#header">Home</a> </li>  
-                <li><a href="#about">About</a> </li>
-                <li><a href="#portfolio">Projects</a> </li>
-                <li><a href="#">Contact</a> </li>
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo"><a href="#">The More The Mary-er</a></div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class='bx bx-x' ></i>
+                </div>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-        
-<!--Home Text Introduction-->
-        <div class="header-text">
-            <p> 3rd Year College Student, from Technological University <br>of the Philippines - Manila.</p>
-            <h1><span>Mary</span> Angelene V. <span>Balais</span></h1>
+            <div class="icon menu-btn">
+                <i class='bx bx-menu'></i>
+            </div>
         </div>
-    </div>
-</div>
+    </nav>
+
+    <div class="banner" id="banner"></div>
 
 <!--About section-->
-<div id="about">
-    <div class="container">
+
+<div class="about" id="about">
+    <div class="content">
         <div class="row">
-            <div class="about-col-1">
-                <img src="Images/1x1.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="subtitle"> About Me</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="title">About Me</div>
+            <img src="Images/1x1.jpg" alt="1x1 Pic of Mary Balais" style="display: block; margin: 0 auto; width: 25%; border-radius: 10px;">
+
              <!--Brief Introduction and Description about Myself-->
-                <p> Hello, I'm Mary Angelene V. Balais, a 20-year-old with a passion for creativity and community involvement. 
-                When I'm not pursuing my studies as a 3rd-year college student at the Technological University of the Philippines 
+                <p> Hello, I'm Mary Angelene V. Balais, a 20-year-old with a passion for creativity and community involvement. </p>
+                <p>When I'm not pursuing my studies as a 3rd-year college student at the Technological University of the Philippines 
                 - Manila Campus, I'm indulging in my hobbies and talents, which include sewing, lettering, crafting, scrapbooking, 
-                and singing. Beyond my personal interests, I'm an active server and choir member at Sta. Clara de Montefalco Church, 
+                and singing. </p>
+                <p>Beyond my personal interests, I'm an active server and choir member at Sta. Clara de Montefalco Church, 
                 where I find joy in contributing to the spiritual life of our community. I also proudly serve as the Public Relations 
                 Officer of the Parish Youth Ministry since 2023. As a Caritas Manila Youth Servant Leadership and Education Program 
-                (YSLEP) Scholar since 2021, I'm committed to giving back to society. Additionally, my basic HTML knowledge, gained 
-                during my 10th-grade ICT course, reflects my eagerness to embrace new skills and technologies. I look forward to 
+                (YSLEP) Scholar since 2021, I'm committed to giving back to society.</p> 
+                <p>Additionally, my basic HTML knowledge, gained during my 10th-grade ICT course, reflects my eagerness to embrace new skills and technologies. I look forward to 
                 connecting with people and sharing experiences that drive personal growth and community betterment. </p>
-            </div>
-            
-            <div class="container">
-                <div class="btn-container">
-                  <a href="https://drive.google.com/file/d/1NSPVDwrsDNP61EhMper53U6WIn8A0pt4/view?usp=sharing"><button class="btn">My CV</button></a>
-                </div>
-            </div>
+
+<div class="button-container">
+    <a href="https://drive.google.com/file/d/1NSPVDwrsDNP61EhMper53U6WIn8A0pt4/view?usp=sharing" class="btn">See My CV</a>
+</div>
+
 
         </div>
     </div>
-</div>    
+</div>
 
 <!--Projects/Portfolio Section-->
-<section>
-<div id="portfolio">
-    <div class="container">
-        <h1 class="subtitle">My Works</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="Images/PD.png">
-                <div class="layer">
-                    <h2>Platz Dodge</h2>
-                    <p>The quick brown fox jumps over the lazy dog</p>
-                    <a href="https://github.com/SchoolPurposeOnly/Platz-Dodge"><i class='bx bx-link-alt bx-rotate-90' undefined ></i></a>
-                  </div>
+
+
+<div class="portfolio" id="portfolio">
+    <div class="content">
+        <div class="row">
+            <br>
+            <div class="subtitle">My Works</div>
+                <div class="work-list">
+                    
+                    <div class="work">
+                    <img src="Images/PD.png">
+                        <div class="layer">
+                            <h2>Platz Dodge</h2>
+                            <p>The quick brown fox jumps over the lazy dog</p>
+                            <a href="https://github.com/SchoolPurposeOnly/Platz-Dodge"><i class='bx bx-link-alt bx-rotate-90' undefined ></i></a>
+                        </div>
+                    </div>
             
-            </div>
-            <div class="work">
-                <img src="Images/SG.png">
-                <div class="layer">
-                    <h2>2D Snake Game</h2>
-                    <p>The quick brown fox jumps over the lazy dog</p>
-                    <a href="https://github.com/ImYokaii/SnekGame"><i class='bx bx-link-alt bx-rotate-90' undefined ></i></a>
-                  </div>
+                    <div class="work">
+                    <img src="Images/SG.png">
+                        <div class="layer">
+                            <h2>2D Snake Game</h2>
+                            <p>The quick brown fox jumps over the lazy dog</p>
+                            <a href="https://github.com/ImYokaii/SnekGame"><i class='bx bx-link-alt bx-rotate-90' undefined ></i></a>
+                        </div>
+                     </div>   
                   
-            
-            </div>
-            <div class="work">
-                <img src="Images/MS.png">
-                <div class="layer">
-                    <h2>McDonald's Mock-Up Ordering System</h2>
-                    <p>The quick brown fox jumps over the lazy dog</p>
-                    <a href="https://github.com/ImYokaii/MockUpOrdering"><i class='bx bx-link-alt bx-rotate-90' undefined ></i></a>
-                  </div>
-           
+                    <div class="work">
+                    <img src="Images/MS.png">
+                        <div class="layer">
+                            <h2>McDonald's Mock-Up Ordering System</h2>
+                            <p>The quick brown fox jumps over the lazy dog</p>
+                            <a href="https://github.com/ImYokaii/MockUpOrdering"><i class='bx bx-link-alt bx-rotate-90' undefined ></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                    <img src="Images/CC.png">
+                        <div class="layer">
+                            <h2>Cryptogram with GUI</h2>
+                            <p>The quick brown fox jumps over the lazy dog</p>
+                            <a href=https://github.com/TheMoreTheMary-er/Ceasar-Cipher-GUI><i class='bx bx-link-alt bx-rotate-90' undefined ></i></a>
+                        </div>  
+                    </div>  
+
+                </div>
             </div>
         </div>
     </div>
 </div>
-</section>
 
-<divv id="contact">
+<div class="contact" id="contact">
     <div class="contact-socials">
-        <h2>Contact<span> Me!</span></h2>
+       
+        <h2>Contact Me!</h2>
         <h4>Hit me up, let's talk...</h4>
-        <h5><i class='bx bxl-gmail' ></i> Gmail: maryangelene.balais@gmail.com</h5>
+        <h5><i class='bx bxl-gmail'></i>Gmail: maryangelene.balais@gmail.com</h5>
         <p>You can also find me on Instagram and Facebook!</p>
+        
+        <div class="socmeds">
         <a href="https://www.facebook.com/marybalais31"><i class='bx bxl-facebook'></i></a>
         <a href="https://www.instagram.com/mary_balais31/"><i class='bx bxl-instagram' ></i></a>
-
+        </div>
+        <img src="Images/side.jpeg" alt="Pic of Mary Balais" style="display: block; margin: 0 auto; width: 43%; border-radius: 10px;">
     </div>
-
 </div>
 
-
-
-<!--
-<script>
-    //Animation of Skills, Experiences, Education in About Me Section
-var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab")
-    }
-</script> -->
-
-<script type="text/javascript" src="script.js"> </script>
-
-
+<!--JS File-->
+<script src="script.js"></script>
 
 </body>
 </html>
