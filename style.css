@@ -5,7 +5,6 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    scroll-behavior: smooth;
 }
 
 body{
@@ -110,53 +109,30 @@ nav ul li a:hover::after{
     color: #c49343;
 }
 
-.tab-titles{
-    display:flex;
-    margin: 20px 0 40px;
-    color: #446a7c;
-}
-
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
+.btn {
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
     cursor: pointer;
-    position: relative;
-}
+    margin: 0 auto;
+  }
+  
+  /* CV Button */
+  .btn {
+    border-color: #c49343;
+    color: #d7b57e;
+  }
+  
+  .btn:hover {
+    background-color: #c49343;
+    color: white;
+  }
 
-.tab-links::after{ /*Line underneath the Tab Links*/
-    content:'';
-    width: 0;
-    height: 3px;
-    background: #e5cfab;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-}
-
-.tab-links.active-link::after{
-    width: 50%;
-}
-
-.tab-contents ul li{
-    list-style: none;
-    margin:10px 0;
-    list-style-type: disc;
-}
-
-.tab-contents ul li span{
-    color: #c49343;
-    font-size:14px;
-}
-
- .tab-contents{
-    display: none;
- }
-
- .tab-contents.active-tab{
-    display: block;
- }
+.about-col-2 .btn {
+  margin-top: 20px;} 
 
 /* My Projects/Portfolio Section*/
 #portfolio{
@@ -180,4 +156,58 @@ nav ul li a:hover::after{
     width: 100%;
     border-radius: 10px;
     display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#6393a9);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #f3e9d8;
+    transition: height 0.5s;
+}
+
+.layer h2{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color:#6594aa;
+    text-decoration: none;
+    font-size: 18px;
+    line-height:60px;
+    background:#fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.contact-socials h4{
+    color: var();
+    margin: 18 px 0;
+    font-size: 20px;
+    font-weight: 600;
 }
