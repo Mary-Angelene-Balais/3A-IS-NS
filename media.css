@@ -48,6 +48,18 @@
         flex-wrap: wrap;
         height: fit-content;
     }
+    .contact-socials h2{
+        margin-top: 200px;
+        margin-bottom: 20px;
+        font-size: 50px;
+        color: #c49343;
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
 
     .contact-socials h4{
         color:#4b7487;
@@ -218,7 +230,7 @@
 
     .menu-list li a{
         color: #365361;
-        font-size: 35px;
+        font-size: 25px;
         font-weight: 500;
         margin-left: 25px;
         text-decoration: none;
@@ -251,7 +263,7 @@
         margin: 0 auto;
     }
     .work{
-        width: 600px;
+        width: 580px;
         border-radius: 10px;
         position: relative;
         overflow: hidden;
@@ -282,7 +294,7 @@
 
     .menu-list li a{
         color: #365361;
-        font-size: 35px;
+        font-size: 25px;
         font-weight: 500;
         margin-left: 25px;
         text-decoration: none;
