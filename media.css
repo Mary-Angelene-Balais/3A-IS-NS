@@ -1,7 +1,6 @@
-/*For Mobile Phones*/
-@media only screen and (min-width: 300px) and (max-width:900px){
+/*For Extra Small Screens*/
+@media only screen and (min-width: 300px) {
     .content{
-        max-width: 900px;
         min-width: 300;
         margin: auto;
         padding: 0px 30px;
@@ -10,7 +9,7 @@
     
     .navbar .logo a{
         color: #fff;
-        font-size: 23px;
+        font-size: 19px;
         font-weight: 600;
         text-decoration: none;
     }
@@ -26,11 +25,18 @@
 
     .banner{
         height: 100vh;
-        background: url("Images/bg_angge_2.png") no-repeat ;
+        background: url("Images/phone-wallpaper.png") no-repeat ;
         background-size:contain;
         background-position: center;
         background-attachment: fixed;
         
+    }
+
+    .dp{
+        display: block;
+        margin: 0 auto;
+        width: 55%;
+        border-radius: 10px;
     }
 
     .work-list{
@@ -42,5 +48,306 @@
         flex-wrap: wrap;
         height: fit-content;
     }
+
+    .contact-socials h4{
+        color:#4b7487;
+        margin: 18 px 0;
+        font-size: 30px;
+        font-weight: 600;
+        display: flex;
+        text-align: center;
+    }
+
+    .about p{
+        padding-top: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+/*For Medium Screens*/
+@media only screen and (min-width: 768px) {
+    .content{
+        min-width: 768;
+        margin: auto;
+        padding: 0px 30px;
+        overflow-y: hidden;
+    }
+    
+    .navbar .logo a{
+        color: #fff;
+        font-size: 50px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .menu-list li a{
+        color: #365361;
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 25px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .banner{
+        height: 100vh;
+        background: url("Images/phone-wallpaper.png") no-repeat ;
+        background-size:contain;
+        background-position: center;
+        background-attachment: fixed;
+        
+    }
+
+    .dp{
+        display: block;
+        margin: 0 auto;
+        width: 35%;
+        border-radius: 10px;
+    }
+
+    .work-list{
+        display:flex;
+        grid-gap:20px;
+        margin-top: 50px;
+        justify-items: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: fit-content;
+        margin: 0 auto;
+    }
+    .work{
+        width: 343px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+    .side{
+        display: block;
+        margin: 0 auto;
+        width: 55%;
+        border-radius: 10px;
+    }
+    .side{
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        border-radius: 10px;
+    }
 }
 
+/*For Large Screens*/
+@media only screen and (min-width: 1024px) {
+    .content{
+        min-width: 1024;
+        margin: auto;
+        padding: 0px 30px;
+        overflow-y: hidden;
+    }
+    
+    .navbar .logo a{
+        color: #fff;
+        font-size: 50px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .menu-list li a{
+        color: #365361;
+        font-size: 23px;
+        font-weight: 500;
+        margin-left: 25px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .banner{
+        height: 100vh;
+        background: url("Images/bg_angge_2.png") no-repeat ;
+        background-size:contain;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .dp{
+        display: block;
+        margin: 0 auto;
+        width: 27%;
+        border-radius: 10px;
+    }
+
+    .work-list{
+        display:flex;
+        grid-gap:20px;
+        margin-top: 50px;
+        justify-items: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: fit-content;
+        margin: 0 auto;
+    }
+    .work{
+        width: 470px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+    .side{
+        display: block;
+        margin: 0 auto;
+        width: 65%;
+        border-radius: 10px;
+    }
+}
+
+/*For 1XL Screens*/
+@media only screen and (min-width: 1280px) {
+    .content{
+        min-width: 1280;
+        margin: auto;
+        padding: 0px 30px;
+        overflow-y: hidden;
+    }
+    
+    .navbar .logo a{
+        color: #fff;
+        font-size: 50px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .menu-list li a{
+        color: #365361;
+        font-size: 35px;
+        font-weight: 500;
+        margin-left: 25px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .banner{
+        height: 100vh;
+        background: url("Images/bg_angge_2.png") no-repeat ;
+        background-size:contain;
+        background-position: center;
+        background-attachment: fixed;
+        
+    }
+    .dp{
+        display: block;
+        margin: 0 auto;
+        width: 27%;
+        border-radius: 10px;
+    }
+
+    .work-list{
+        display:flex;
+        grid-gap:20px;
+        margin-top: 50px;
+        justify-items: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: fit-content;
+        margin: 0 auto;
+    }
+    .work{
+        width: 600px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+    .side{
+        display: block;
+        margin: 0 auto;
+        width: 45%;
+        border-radius: 10px;
+    }
+}
+
+/*For 2XL Screens*/
+@media only screen and (min-width: 1536px) {
+    .content{
+        min-width: 1536;
+        margin: auto;
+        padding: 0px 30px;
+        overflow-y: hidden;
+    }
+    
+    .navbar .logo a{
+        color: #fff;
+        font-size: 50px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .menu-list li a{
+        color: #365361;
+        font-size: 35px;
+        font-weight: 500;
+        margin-left: 25px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .banner{
+        height: 100vh;
+        background: url("Images/bg_angge_2.png") no-repeat ;
+        background-size:contain;
+        background-position: center;
+        background-attachment: fixed;   
+    }
+
+    .about .title{
+        font-size: 80px;
+        font-weight: 700;
+        color: #c49343;
+        text-align: center;
+        margin-top: 7%;
+    }
+    
+    .dp{
+        display: block;
+        margin: 0 auto;
+        width: 36%;
+        border-radius: 10px;
+    }
+    
+    .about p{
+        padding-top: 20px;
+        text-align: justify;
+        font-size: 25px;
+    }
+    .portfolio .subtitle{
+        font-size: 80px;
+        font-weight: 700;
+        color: #c49343;
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 3%;
+    }
+
+    .work-list{
+        display:flex;
+        grid-gap:20px;
+        margin-top: 50px;
+        justify-items: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    .work{
+        width: 550px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .side{
+        display: block;
+        margin: 0 auto;
+        width: 23%;
+        border-radius: 10px;
+    }
+
+}
